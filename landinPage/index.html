@@ -9,10 +9,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
-  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
  
 </head>
@@ -25,19 +22,14 @@
     <div class="header">
       <div class="bg-color">
         <header id="main-header">
-          <nav class="navbar navbar-default navbar-fixed-top">
+          <nav class="navbar navbar-default navbar-expand-lg fixed-top navbar-dark" id="navPrincipal">
             <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <img src="img/iconoLetrasBlancas.svg" height="70"width="150" alt="">
-                
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+              <img src="img/iconoLetrasBlancas.svg" height="70"width="150" alt="">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
                   <li class="active"><a href="#main-header">Comenzar</a></li>
                   <li class=""><a href="#feature">Servicios</a></li>
                   <li class=""><a href="#portfolio">Comprar</a></li>
@@ -48,6 +40,7 @@
             </div>
           </nav>
         </header>
+
         <div class="wrapper">
           <div class="container">
             <div class="row">
@@ -114,7 +107,7 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
-              <img src="img/tiendaMaquillaje1.png" class="img-responsive">
+              <img src="img/tiendaMaquillaje1.png" class="img-fluid">
               <figcaption>
                 <h2>Tienda de maquillaje</h2>
                 <p>Ingresa y obten buenos precios y con servicio de entrega a domicilio</p>
@@ -123,7 +116,7 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
-              <img src="img/tiendaAccesorios.jpg" class="img-responsive">
+              <img src="img/tiendaAccesorios.jpg" class="img-fluid">
               <figcaption>
                 <h2>Venta de accesorios para celulares</h2>
                 <p>Venta al detalle y mayor de accesorios de celular, ingresa y obten buenos precios te esperamos! </p>
@@ -132,7 +125,7 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
-              <img src="img/TiendaZapatoMujer.jpg" class="img-responsive">
+              <img src="img/TiendaZapatoMujer.jpg" class="img-fluid">
               <figcaption>
                 <h2>Shoes</h2>
                 <p>Estilo y elegancia a tu alcance, obten los mejores precios en zapatos para dama </p>
@@ -141,7 +134,7 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
-              <img src="img/tiendaLirbo.jpg" class="img-responsive">
+              <img src="img/tiendaLirbo.jpg" class="img-fluid">
               <figcaption>
                 <h2>EbookMarket</h2>
                 <p>Compra y venta de libros de todo tipo, buscas un libro nosotros lo tenemos, excelentes precios</p>
@@ -150,7 +143,7 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
-              <img src="img/tiendaZapatoHombre1.jpg" class="img-responsive">
+              <img src="img/tiendaZapatoHombre1.jpg" class="img-fluid">
               <figcaption>
                 <h2>ShoesMen</h2>
                 <p>Elegancia y confort para el hombre de oficina</p>
@@ -159,7 +152,7 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
             <figure>
-              <img src="img/tiendaComputadoras.jpg" class="img-responsive">
+              <img src="img/tiendaComputadoras.jpg" class="img-fluid">
               <figcaption>
                 <h2>PcMaster</h2>
                 <p>Computadoras de todo tipo y buen precion, ingresa ya</p>
@@ -169,7 +162,7 @@
         </div>
       </div>
     </section>
-    <!---->
+    <!----> 
     
     <section id="blog" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
@@ -227,48 +220,39 @@
         </div>
       </div>
     </section>
-    <!---->
+    <!--Formulario-->
     <section id="contact" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center white">
             <h2 class="service-title pad-bt15">Ponte en contacto con nosotros</h2>
             <p class="sub-title pad-bt15">Si tienes dudas sobre nuestros servicios y como empezar, escribenos y te ayudamos</p>
-            <hr class="bottom-line white-bg">
+            <hr class="bottom-line">
           </div>
-          <div class="col-md-4">
-
+          <div class="col-md-2 col-0 col-lg-3">            
           </div>
-          <div class="col-md-4 col-sm-12 col-xs-12" >
-            <div class="contact-form" >
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="col-md-6 padding-right-zero">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Contactános</h5>
+                <form>
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
+                    <label for="nombreUsuario">Nombre</label>
+                    <input type="email" class="form-control" id="nombreUsuario" required  placeholder="Ingresa tu nombre">
                   </div>
-                </div>
-                <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
+                    <label for="correoUsuario">Correo</label>
+                    <input type="email" class="form-control" id="correoUsuario" required placeholder="Ingrese email">                    
                   </div>
-                </div>
-                <div class="col-md-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="Asunto" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <button type="button" class="btn btn-primary btn-submit">Enviar</button>
-                </div>
-              </form>
+                    <label for="mensajeCorreo">Mensaje</label>
+                    <textarea class="form-control" id="mensajeCorreo" required  placeholder="Escriba su mensaje"></textarea>                    
+                  </div>                  
+                  <button type="submit" class="btn btn-warning rounded-pill text-white">Submit</button>
+                </form>            
+              </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -284,12 +268,12 @@
     </footer>
     <!---->
   </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>-->
-  <script src="js/efectos.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/navegacion.js"></script>
+  
+  
   
 
 </body>
