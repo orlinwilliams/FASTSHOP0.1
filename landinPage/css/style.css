@@ -574,6 +574,7 @@ contact
 #footer
 {
     padding: 20px 0px;
+    background: #585858;
 }
 .scrollToTop {
     position: fixed;
@@ -594,10 +595,30 @@ contact
 {
     background-color: #fff;
 }
-#footer a{
-    color: #be9e21;
-    font-weight: 400;
+#footer a, #footer label, #footer span{ 
+    color: #F1D048;
+    font-weight: 500;
+    margin-right: 5px;
+
 }
+#footer i{
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#iconoFacebook:hover{
+    color: blue;
+}
+#iconoTwitter:hover{
+    color: #1da1f2;
+}
+#iconoYoutube:hover{
+    color: red;
+}
+
 /***********************************
 ************************************
 Responsive media queries
